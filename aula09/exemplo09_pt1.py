@@ -5,6 +5,7 @@ def get_num():
             return float(input('Informe um número: '))
         except ValueError: print('Erro. Informe um número válido')
 
+
 def doble(num):
     return num * 2
 
@@ -16,6 +17,7 @@ def square(num):
 
 def half(num):
     return num / 2
+
 
 def show_menu():
     dict_opt = {1: 'Dobro',
@@ -39,6 +41,7 @@ def choice_menu():
             print(f'{half(n):.2f}')
         case _: 
             print('Selecione uma opção válida')
+
 
 n = get_num()
 
