@@ -1,22 +1,22 @@
 #Atividade 01
 def get_nums():
-    n1 = float(input('Informe um número: '))
-    n2 = float(input('Informe outro número: '))
-    return n1, n2
+    a = float(input('Informe um número: '))
+    b = float(input('Informe outro número: '))
+    return a, b
 
-def summ(n1, n2):
-    return n1 + n2
+def summ(a, b):
+    return a + b
 
-def sub(n1, n2):
-    return n1 - n2
+def sub(a, b):
+    return a - b
 
-def mult(n1, n2):
-    return n1 * n2
+def mult(a, b):
+    return a * b
 
-def div(n1, n2):
-    return n1 / n2
+def div(a, b):
+    return a / b
 
-def menu(nums):
+def menu():
     dict_opt = {1: 'Soma',
                 2: 'Subtração',
                 3: 'Multiplicação',
@@ -41,7 +41,6 @@ def choice_menu(nums):
             print('Selecione uma opção válida')
 
 
-
 if __name__ == '__main__':
     nums = get_nums()
-    menu(nums)
+    menu()
