@@ -38,7 +38,7 @@ def choice_menu(nums):
         case 4: 
             print(f'{div(*nums):.2f}')
         case _: 
-            print('Selecione uma opção válida')
+            print('Selecione uma opção válida.')
 
 
 if __name__ == '__main__':
