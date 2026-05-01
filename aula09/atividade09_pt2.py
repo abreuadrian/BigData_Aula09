@@ -26,7 +26,10 @@ def choice_menu(nums):
         case 3:
             print(f'{mult(*nums):.2f}')
         case 4: 
-            print(f'{div(*nums):.2f}')
+            try:
+                print(f'{div(*nums):.2f}')
+            except ZeroDivisionError: 
+                print('Erro. Não é possível dividir por 0.')
         case _: 
             print('Selecione uma opção válida')
 
